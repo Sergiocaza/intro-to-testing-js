@@ -35,3 +35,16 @@ function isVowel(input) {
         }
     }
 }
+
+function add(x,y) {
+    if(typeof x === "string" || typeof y === "string"){
+        var numX = parseFloat(x), numY = parseFloat(y);
+        if ( isNaN(numX)|| isNaN(numY)){
+            return "NaN";//I attempted to get NaN not as a string and could not get it to resolve, so I opted for a String
+        }else{
+            return numX + numY;
+        }
+    }else {
+        return x + y;
+    }
+}

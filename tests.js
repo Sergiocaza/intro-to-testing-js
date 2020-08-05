@@ -113,3 +113,19 @@ describe("isVowel", function () {
         expect(isVowel("")).toBe(false);
     });
 })
+
+//Test Add function
+describe("add", function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return the sum of the two numbers that are passed', function () {
+        expect(add(2,3)).toBe(5);
+        expect(add(-3,-9)).toBe(-12);
+        expect(add("5", 6)).toBe(11);
+        expect(add("-4", "10")).toBe(6);
+    });
+    it('should return NaN if either input parsed is NaN', function () {
+        expect(add("banana","split")).toBe("NaN");
+    });
+})
