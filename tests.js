@@ -14,4 +14,14 @@ describe('helloWorld', function() {
     });
 });
 
-//Sergio Intro testing js
+//First Test Drive
+describe('helloWorld', function () {
+    it('should be defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+    it('should should return a string when called', function () {
+        expect(typeof sayHello()).toBe("string");
+    });
+
+
+})
